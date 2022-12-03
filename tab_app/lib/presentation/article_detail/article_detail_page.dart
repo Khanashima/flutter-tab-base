@@ -6,12 +6,12 @@ class ArticleDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('記事詳細画面'),
-        ),
-        body: const Center(
-          child: Text('記事詳細画面'),
-        ),
-      );
+      appBar: AppBar(
+        title: const Text('記事詳細画面'),
+      ),
+      body: const Center(
+        child: Text('記事詳細画面'),
+      ),
+    );
   }
 }

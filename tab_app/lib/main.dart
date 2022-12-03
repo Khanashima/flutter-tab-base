@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
+import 'package:tab_app/presentation/common/tab.dart';
 import 'router/router.dart';
 
 void main() {
@@ -62,26 +62,33 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               child: const Text('一覧へ'),
               onPressed: () {
-                context.push('/list');
+                context.push('/home/list');
               },
             ),
             ElevatedButton(
               child: const Text('詳細へ'),
               onPressed: () {
-                context.go('/list/detail');
-              },
-            ),            ElevatedButton(
-              child: const Text('記事一覧へ'),
-              onPressed: () {
-                context.push('/article/list');
+                context.go('/home/list/detail');
               },
             ),
             ElevatedButton(
-              child: const Text('記事へ'),
+              child: const Text('記事一覧へ'),
+              onPressed: () {
+                context.go('/article/list');
+              },
+            ),
+            ElevatedButton(
+              child: const Text('記事詳細へ'),
               onPressed: () {
                 context.go('/article/list/detail');
               },
-            )
+            ),
+            ElevatedButton(
+              child: const Text('利用規約へ'),
+              onPressed: () {
+                context.go('/rule');
+              },
+            ),
           ],
         ),
       ),
