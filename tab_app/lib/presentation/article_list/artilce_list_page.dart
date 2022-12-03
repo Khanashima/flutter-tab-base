@@ -11,9 +11,9 @@ class ArticleListPage extends StatelessWidget {
         title: const Text('記事一覧画面'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
             const Text(
               '遷移のサンプル',
             ),
@@ -22,8 +22,8 @@ class ArticleListPage extends StatelessWidget {
               onPressed: () {
                 context.push('/article/list/adetail');
               },
-            )])
-      ),
+            )
+          ])),
     );
   }
 }
