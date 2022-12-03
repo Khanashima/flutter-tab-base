@@ -5,16 +5,13 @@ class DetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: '詳細画面',
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: const Text('詳細画面'),
         ),
         body: const Center(
           child: Text('詳細画面'),
         ),
-      ),
-    );
+      );
   }
 }

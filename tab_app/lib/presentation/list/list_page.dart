@@ -5,16 +5,13 @@ class ListPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: '一覧画面',
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: const Text('一覧画面'),
         ),
         body: const Center(
           child: Text('一覧画面'),
         ),
-      ),
-    );
+      );
   }
 }

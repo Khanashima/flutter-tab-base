@@ -62,13 +62,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               child: const Text('一覧へ'),
               onPressed: () {
-                context.go('/list');
+                context.push('/list');
               },
             ),
             ElevatedButton(
               child: const Text('詳細へ'),
               onPressed: () {
-                context.go('/detail');
+                context.go('/list/detail');
               },
             )
           ],
